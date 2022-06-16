@@ -1,0 +1,42 @@
+header {
+  position: absolute;
+  z-index: 999;
+  padding: 40px 60px;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header p.logo-header {
+  font-family: "Yellowtail", cursive;
+  font-size: 52px;
+  color: var(--primary-color);
+}
+
+header p.logo-header span {
+  color: #ff0000;
+}
+
+header .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 40px 30px;
+  }
+  header p.logo-header {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  header p.logo-header {
+    font-size: 36px;
+  }
+}
