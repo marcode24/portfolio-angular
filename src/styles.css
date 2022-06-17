@@ -13,6 +13,7 @@
   --second-color: #1f2937;
   --bg-color-button: #f3f4f6;
   --bg-dark3: #4b5563;
+  --border-color: #d1d5db;
 }
 
 ::-webkit-scrollbar {
@@ -75,4 +76,10 @@ section > .title {
   font-weight: bold;
   font-size: 64px;
   margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  h1.title {
+    font-size: 52px;
+  }
 }

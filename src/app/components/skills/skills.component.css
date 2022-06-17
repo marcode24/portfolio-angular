@@ -1,0 +1,42 @@
+section#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0.8rem 0;
+  color: var(--primary-color);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  section#skills {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section#skills h1.title {
+    align-self: flex-start;
+  }
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  section#skills {
+    justify-content: center;
+  }
+}
