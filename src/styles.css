@@ -12,8 +12,23 @@
   --primary-color: #3b82f6;
   --second-color: #1f2937;
   --bg-color-button: #f3f4f6;
+  --bg-color-tooltip: #fff;
   --bg-dark3: #4b5563;
   --border-color: #d1d5db;
+  --border-color-nav: transparent;
+}
+
+body {
+  color: var(--font-color);
+}
+
+body.dark-theme {
+  --bg-color: #111827;
+  --font-color: #ffffff;
+  --border-color-nav: #374151;
+  --bg-color-button: #1f2937;
+  --bg-dark3: #d1d5db;
+  --bg-color-tooltip: var(--bg-color-button);
 }
 
 ::-webkit-scrollbar {

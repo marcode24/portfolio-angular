@@ -93,7 +93,7 @@ section#portfolio {
   opacity: 0;
   border-radius: 16px;
   padding: 4px 16px;
-  background: var(--font-color);
+  background: #111827;
   font-weight: 300;
   font-size: 14px;
 }

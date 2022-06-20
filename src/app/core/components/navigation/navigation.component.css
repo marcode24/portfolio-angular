@@ -4,7 +4,8 @@
   left: 100px;
   height: auto;
   width: auto;
-  background: #fff;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color-nav);
   border-radius: 24px;
   box-shadow: 0px 0 20px 3px rgb(0 0 0 / 10%);
   z-index: 10;
@@ -21,17 +22,18 @@
 }
 
 .navigation ul li {
+  cursor: pointer;
   position: relative;
   list-style: none;
   border-radius: 14px;
-  width: 70px;
-  height: 70px;
+  width: 63px;
+  height: 63px;
   box-sizing: border-box;
   transition: 0.3s;
 }
 .navigation ul li:hover,
 .navigation ul li.active {
-  transition: 0.4s;
+  transition: 0.2s;
   background: var(--primary-color);
 }
 
@@ -39,7 +41,7 @@
   background-color: var(--bg-color-button);
 }
 
-.navigation ul li.active a {
+.navigation ul li.active a fa-icon {
   color: #fff;
 }
 
@@ -61,7 +63,7 @@
   text-align: center;
 }
 
-.navigation ul li:hover a .icon {
+.navigation ul li a:hover .icon {
   color: #fff;
 }
 
@@ -69,8 +71,9 @@
   position: absolute;
   left: 90px;
   display: block;
-  background: #fff;
-  width: auto;
+  background: var(--bg-color-tooltip);
+  color: var(--font-color);
+  width: max-content;
   padding: 5px 10px;
   transform: translateY(-15%) translateX(0px);
   border-radius: 6px;
@@ -80,7 +83,7 @@
   transition: 0.5s;
 }
 
-.navigation ul li:hover a .title {
+.navigation ul li a:hover .title {
   transform: translateY(-15%) translateX(10px);
   visibility: visible;
   opacity: 1;
@@ -93,9 +96,10 @@
   left: -8px;
   width: 12px;
   height: 12px;
-  background: #fff;
+  background: var(--bg-color-tooltip);
   transform: rotate(45deg) translateY(-50%);
   border-radius: 2px;
+  transition: 0.5s;
 }
 
 .navigation ul hr.line-divisor {
@@ -134,11 +138,17 @@
 
 @media (max-width: 480px) {
   .navigation {
+    border-radius: 16px;
     top: 93%;
     left: 50%;
   }
   .navigation ul li {
     width: 46px;
     height: 46px;
+    border-radius: 12px;
+  }
+
+  .navigation ul li a fa-icon {
+    font-size: 12px;
   }
 }
