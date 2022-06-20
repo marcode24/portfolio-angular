@@ -9,7 +9,16 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBriefcase, faEnvelope, faHome, faMoon, faSun, faUser, faWrench } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBriefcase,
+  faEnvelope,
+  faHome,
+  faMoon,
+  faSun,
+  faUpRightFromSquare,
+  faUser,
+  faWrench
+} from '@fortawesome/free-solid-svg-icons';
 
 
 @NgModule({
@@ -37,7 +46,8 @@ export class AppModule {
       faWrench,
       faEnvelope,
       faSun,
-      faMoon
+      faMoon,
+      faUpRightFromSquare
     );
   }
 }

@@ -5,22 +5,27 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 
 import { SkillsComponentsModule } from './skills/components/components.module';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent
   ],
   imports: [
     CommonModule,
-    SkillsComponentsModule
+    SkillsComponentsModule,
+    FontAwesomeModule
   ],
   exports: [
     HomeComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent
   ]
 })
 export class ComponentsModule { }

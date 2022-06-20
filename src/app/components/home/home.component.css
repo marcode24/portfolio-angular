@@ -44,7 +44,6 @@ img {
   height: 100%;
   border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
   border: 3px solid var(--primary-color);
-  object-fit: cover;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
