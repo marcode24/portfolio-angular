@@ -1,12 +1,33 @@
 section.home {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 100vh !important;
 }
 
-button.button-home {
-  margin-top: 2rem;
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.main-title .bottom {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-title .bottom .social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.main-title .bottom .social fa-icon {
+  font-size: 1.2rem;
 }
 
 h1.title {
@@ -17,7 +38,6 @@ h1.title {
 h2.title {
   font-weight: bold;
   font-size: 64px;
-  margin: 0 0 1rem 0;
 }
 
 h2.title span.subtitle-name {
@@ -34,8 +54,8 @@ span.title-job {
 .home figure {
   display: inline-block;
   box-sizing: border-box;
-  width: 38rem;
-  height: 33rem;
+  width: 35rem;
+  height: 30rem;
 }
 
 img {
@@ -45,6 +65,7 @@ img {
   border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
   border: 3px solid var(--primary-color);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  background: #3b82f6;
 }
 
 @media (max-width: 1024px) {
@@ -81,8 +102,8 @@ img {
     width: 18rem;
     height: 18rem;
   }
-  button.button-home {
-    margin-top: 1rem;
+  .main-title .bottom {
+    justify-content: center;
   }
 }
 

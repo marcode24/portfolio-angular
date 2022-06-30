@@ -1,7 +1,7 @@
 header {
   position: absolute;
   z-index: 999;
-  padding: 40px 60px;
+  padding: 40px 16px;
   height: 80px;
   width: 100%;
   background: transparent;
@@ -27,9 +27,6 @@ header .social-icons {
 }
 
 @media (max-width: 900px) {
-  header {
-    padding: 40px 30px;
-  }
   header p.logo-header {
     font-size: 46px;
   }

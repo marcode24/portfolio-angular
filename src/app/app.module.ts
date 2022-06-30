@@ -47,7 +47,7 @@ export class AppModule {
       faEnvelope,
       faSun,
       faMoon,
-      faUpRightFromSquare
+      faUpRightFromSquare,
     );
   }
 }

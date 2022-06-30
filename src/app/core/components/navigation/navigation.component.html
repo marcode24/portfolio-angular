@@ -1,5 +1,5 @@
-<div class="navigation">
-  <ul>
+<nav>
+  <ul class="nav">
     <li class="home active">
       <a href="#home">
         <fa-icon [icon]="['fas', 'home']" size="2x" class="icon"></fa-icon>
@@ -9,33 +9,36 @@
     <li class="about">
       <a href="#about">
         <fa-icon [icon]="['fas', 'user']" size="2x" class="icon"></fa-icon>
-        <span class="title">About</span>
+        <span class="title">About me</span>
       </a>
     </li>
     <li class="skills">
       <a href="#skills">
         <fa-icon [icon]="['fas', 'wrench']" size="2x" class="icon"></fa-icon>
-        <span class="title">Skills</span>
+        <span class="title">My skills</span>
       </a>
     </li>
     <li class="portfolio">
       <a href="#portfolio">
         <fa-icon [icon]="['fas', 'briefcase']" size="2x" class="icon"></fa-icon>
-        <span class="title">Portfolio</span>
+        <span class="title">My portfolio</span>
       </a>
     </li>
     <li class="contact">
       <a href="#contact">
         <fa-icon [icon]="['fas', 'envelope']" size="2x" class="icon"></fa-icon>
-        <span class="title">Contact</span>
+        <span class="title">Contact me</span>
       </a>
     </li>
-    <hr class="line-divisor">
+    <li class="divisor">
+      <!-- <hr class="line-divisor"> -->
+      <div class="line-divisor"></div>
+    </li>
     <li>
       <a (click)="setTheme()">
         <fa-icon [icon]="['fas', (!isDarkTheme) ? 'moon' : 'sun']" size="2x" class="icon"></fa-icon>
-        <span class="title">{{ !isDarkTheme ? 'Dark' : 'Light' }} m ode</span>
+        <span class="title">{{ !isDarkTheme ? 'Dark' : 'Light' }} mode</span>
       </a>
     </li>
   </ul>
-</div>
+</nav>
