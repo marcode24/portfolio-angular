@@ -17,6 +17,7 @@
   --bg-dark3: #4b5563;
   --border-color: #d1d5db;
   --border-color-nav: transparent;
+  --bg-color-badge: #1f2937;
 }
 
 body {
@@ -35,6 +36,7 @@ body.dark-theme {
   --bg-color-button-hover: #2d3949;
   --bg-dark3: #d1d5db;
   --bg-color-tooltip: var(--bg-color-button);
+  --bg-color-badge: #4b5563;
 }
 
 ::-webkit-scrollbar {

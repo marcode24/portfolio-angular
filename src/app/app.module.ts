@@ -12,6 +12,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faBriefcase,
   faEnvelope,
+  faExternalLink,
   faHome,
   faMoon,
   faSun,
@@ -48,6 +49,7 @@ export class AppModule {
       faSun,
       faMoon,
       faUpRightFromSquare,
+      faExternalLink
     );
   }
 }
