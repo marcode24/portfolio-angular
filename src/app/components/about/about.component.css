@@ -29,7 +29,7 @@ section figure img {
     padding: 0;
   }
   section figure {
-    width: 35rem;
+    width: 100%;
     height: 20rem;
   }
   section .description {

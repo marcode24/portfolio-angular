@@ -5,15 +5,21 @@ section#portfolio {
   padding: 0;
 }
 
+.button-portfolio {
+  max-width: 40%;
+  align-self: center;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
+  gap: 5rem;
 }
 
 .item {
-  margin: 2.5rem 0;
   position: relative;
-  min-height: 450px;
+  height: 450px;
+  z-index: 1;
 }
 
 .item:nth-child(2n + 2) picture {
@@ -21,10 +27,11 @@ section#portfolio {
 }
 
 .item picture {
-  background-color: rgb(59, 130, 246, 0.4);
-  height: 450px;
-  width: 700px;
-  border-radius: 12px;
+  /* background-color: rgb(59, 130, 246, 0.45); */
+  background: #4471ba;
+  height: 100%;
+  width: 60%;
+  border-radius: 25px;
   position: absolute;
   transition: 0.4s;
   z-index: 1;
@@ -32,6 +39,7 @@ section#portfolio {
 
 .item picture:hover {
   background-color: transparent;
+  transition: 0.4s;
 }
 
 .item picture img {
@@ -47,11 +55,13 @@ section#portfolio {
 .item picture:hover img {
   mix-blend-mode: normal;
   filter: none;
+  cursor: pointer;
 }
 
 .item:nth-child(2n + 2) .description {
   left: 0;
   text-align: left;
+  max-width: 60%;
 }
 
 .item .description {
@@ -69,6 +79,7 @@ section#portfolio {
   font-size: 42px;
   font-weight: 700;
   color: var(--primary-color);
+  z-index: 1;
 }
 
 .card {
@@ -99,6 +110,7 @@ section#portfolio {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .badge {
@@ -112,4 +124,68 @@ section#portfolio {
 
 .links fa-icon {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    gap: 1.5rem;
+  }
+  .card {
+    background-color: transparent;
+    padding: 1rem 0;
+    min-width: auto;
+    min-height: auto;
+    border: none;
+  }
+
+  .card .body {
+    color: var(--third-color);
+  }
+
+  .item {
+    height: 400px;
+  }
+
+  .item picture {
+    height: 400px;
+    width: 100%;
+    /* background-color: rgb(17, 24, 39, 0.8); */
+  }
+
+  .item .description {
+    text-align: start;
+    z-index: 1;
+    left: 0;
+    min-height: 400px;
+    padding: 1rem;
+  }
+
+  .item .description {
+    align-items: flex-start;
+  }
+
+  .item:nth-child(2n + 2) .description {
+    max-width: 100%;
+  }
+
+  .item .description .title {
+    color: var(--third-color);
+    text-shadow: var(--text-shadow-color) 2px 0px 0px,
+      var(--text-shadow-color) 1.75517px 0.958851px 0px,
+      var(--text-shadow-color) 1.0806px 1.68294px 0px,
+      var(--text-shadow-color) 0.141474px 1.99499px 0px,
+      var(--text-shadow-color) -0.832294px 1.81859px 0px,
+      var(--text-shadow-color) -1.60229px 1.19694px 0px,
+      var(--text-shadow-color) -1.97998px 0.28224px 0px,
+      var(--text-shadow-color) -1.87291px -0.701566px 0px,
+      var(--text-shadow-color) -1.30729px -1.5136px 0px,
+      var(--text-shadow-color) -0.421592px -1.95506px 0px,
+      var(--text-shadow-color) 0.567324px -1.91785px 0px,
+      var(--text-shadow-color) 1.41734px -1.41108px 0px,
+      var(--text-shadow-color) 1.92034px -0.558831px 0px;
+  }
+
+  .description .links {
+    color: #e7e9ea;
+  }
 }
