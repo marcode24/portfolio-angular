@@ -26,6 +26,17 @@ header .social-icons {
   gap: 1rem;
 }
 
+header .social-icons a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+header .social-icons a:hover {
+  color: var(--primary-color);
+}
+
 @media (max-width: 900px) {
   header p.logo-header {
     font-size: 46px;

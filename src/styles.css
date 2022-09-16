@@ -75,7 +75,8 @@ body {
   background-color: var(--bg-color);
 }
 
-button {
+button,
+a.btn {
   font-family: inherit;
   border-radius: 8px;
   border: none;
@@ -88,25 +89,36 @@ button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.25s;
   font-weight: 500;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover,
+a.btn:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--bg-dark3);
   transform: translateY(-0.25em);
 }
 
 section {
   width: 100%;
+  margin: 2rem 0;
 }
 
 section > .title {
   font-weight: bold;
-  font-size: 64px;
+  font-size: 52px;
   margin: 1rem 0;
+  align-self: flex-start;
 }
 
 @media (max-width: 900px) {
-  h1.title {
-    font-size: 52px;
+  h1.title,
+  .title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  section > .title {
+    font-size: 38px;
   }
 }

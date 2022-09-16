@@ -1,6 +1,6 @@
 <div class="card" *ngFor="let data of cards">
   <div class="body">
-    <img [src]="data.imagePath" [alt]="data.alt + 'image'">
+    <img [src]="data.imagePath" [alt]="data.alt + 'image'" loading="lazy">
     <p class="title">{{data.name}}</p>
   </div>
 </div>

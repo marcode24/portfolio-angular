@@ -1,19 +1,21 @@
 section#portfolio {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   padding: 0;
 }
 
-.button-portfolio {
-  max-width: 40%;
-  align-self: center;
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  margin-top: 2rem;
 }
 
 .item {
@@ -27,7 +29,6 @@ section#portfolio {
 }
 
 .item picture {
-  /* background-color: rgb(59, 130, 246, 0.45); */
   background: #4471ba;
   height: 100%;
   width: 60%;
@@ -119,14 +120,34 @@ section#portfolio {
   border-radius: 1rem;
   padding: 5px 8px;
   color: #fff;
+  font-weight: 600;
   background-color: var(--bg-color-badge);
 }
 
-.links fa-icon {
+.links a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.links a:visited {
+  color: var(--secondary-color);
+}
+
+.links a:hover {
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
+  .links a {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .links a:visited {
+    color: #fff;
+  }
+
   .projects {
     gap: 1.5rem;
   }
@@ -149,7 +170,6 @@ section#portfolio {
   .item picture {
     height: 400px;
     width: 100%;
-    /* background-color: rgb(17, 24, 39, 0.8); */
   }
 
   .item .description {
@@ -187,5 +207,42 @@ section#portfolio {
 
   .description .links {
     color: #e7e9ea;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0;
+  }
+  .item {
+    height: 300px;
+  }
+  .item picture {
+    height: 300px;
+  }
+
+  .item .description {
+    min-height: 300px;
+  }
+
+  .item .description .title {
+    font-size: 28px;
+  }
+
+  .card .body {
+    font-size: 17px;
+  }
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    min-height: auto;
+  }
+  .links a {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .links a:visited {
+    color: #fff;
   }
 }

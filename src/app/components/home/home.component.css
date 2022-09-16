@@ -3,6 +3,7 @@ section.home {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh !important;
+  margin: 0;
 }
 
 .main-title {
@@ -23,11 +24,18 @@ section.home {
 .main-title .bottom .social {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
-.main-title .bottom .social fa-icon {
-  font-size: 1.2rem;
+.main-title .bottom .social a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.main-title .bottom .social a:hover {
+  color: var(--primary-color);
 }
 
 h1.title {

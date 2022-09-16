@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICard } from 'src/app/core/interfaces/card.interface';
+import { ICard } from '@interfaces/card.interface';
 
 
 @Component({

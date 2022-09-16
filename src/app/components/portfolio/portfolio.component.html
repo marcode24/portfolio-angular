@@ -1,11 +1,11 @@
 <section id="portfolio">
-  <h1 class="title">My portfolio 💼</h1>
+  <span class="title">My portfolio 💼</span>
   <div class="projects">
     <div class="item">
       <picture>
         <img
           src="https://res.cloudinary.com/dfeujtobk/image/upload/v1662941813/Resourcenter/Prevs/desktop/1.3_in6bzn.png"
-          alt="project-preview">
+          alt="project-preview" loading="lazy">
       </picture>
       <div class="description">
         <span class="title">Project Name</span>
@@ -21,59 +21,17 @@
           <span class="badge">#MongoD_B</span>
         </div>
         <div class="links">
-          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
-          <fa-icon [icon]="['fas', 'external-link']" size="2x"></fa-icon>
+          <a href="">
+            <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+          </a>
+          <a href="">
+            <fa-icon [icon]="['fas', 'external-link']" size="2x"></fa-icon>
+          </a>
         </div>
       </div>
     </div>
-    <div class="item">
-      <picture>
-        <img src="https://res.cloudinary.com/dfeujtobk/image/upload/v1658346332/InfoReader/home-1_gpqyqq.png"
-          alt="project-preview">
-      </picture>
-      <div class="description">
-        <span class="title">Project Name</span>
-        <div class="card">
-          <span class="body">Simple description about project here
-            fadfajkfla akl jfdalkdsñ fa lfadslkñfdjsafasdkñjlfa
-            afdsfa afkasj akj ñlfjdasfklsdjfa ñslk
-          </span>
-        </div>
-        <div class="technologies">
-          <span class="badge">#Angular</span>
-          <span class="badge">#Nodejs</span>
-          <span class="badge">#MongoD_B</span>
-        </div>
-        <div class="links">
-          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
-          <fa-icon [icon]="['fas', 'external-link']" size="2x"></fa-icon>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <picture>
-        <img src="https://res.cloudinary.com/dfeujtobk/image/upload/v1658346332/InfoReader/home-1_gpqyqq.png"
-          alt="project-preview">
-      </picture>
-      <div class="description">
-        <span class="title">Project Name</span>
-        <div class="card">
-          <span class="body">Simple description about project here
-            fadfajkfla akl jfdalkdsñ fa lfadslkñfdjsafasdkñjlfa
-            afdsfa afkasj akj ñlfjdasfklsdjfa ñslk
-          </span>
-        </div>
-        <div class="technologies">
-          <span class="badge">#Angular</span>
-          <span class="badge">#Nodejs</span>
-          <span class="badge">#MongoD_B</span>
-        </div>
-        <div class="links">
-          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
-          <fa-icon [icon]="['fas', 'external-link']" size="2x"></fa-icon>
-        </div>
-      </div>
-    </div>
-    <button class="button-portfolio">Show more...</button>
+  </div>
+  <div class="more">
+    <a href="https://github.com/marcode24?tab=repositories" target="_blank" class="btn">Show more</a>
   </div>
 </section>

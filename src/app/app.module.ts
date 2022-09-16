@@ -8,7 +8,13 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faLinkedinIn,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faBriefcase,
   faEnvelope,
@@ -40,6 +46,7 @@ export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
       faGithub,
+      faLinkedinIn,
       faLinkedin,
       faHome,
       faUser,
@@ -49,7 +56,9 @@ export class AppModule {
       faSun,
       faMoon,
       faUpRightFromSquare,
-      faExternalLink
+      faExternalLink,
+      faInstagram,
+      faTwitter
     );
   }
 }

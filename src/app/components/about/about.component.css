@@ -8,15 +8,16 @@ section {
 
 section .description {
   font-size: 24px;
-  font-weight: lighter;
-  max-width: 700px;
+  font-weight: 500;
+  max-width: 70%;
   text-align: justify;
 }
 
 section figure {
-  align-self: center;
+  align-self: flex-end;
   width: 45rem;
   height: 30rem;
+  margin-top: 1rem;
 }
 
 section figure img {

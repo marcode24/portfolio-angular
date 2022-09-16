@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { links } from '@constants/links.constant';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  github: string = links.github;
+  linkedin: string = links.linkedin;
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }

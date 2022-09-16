@@ -8,7 +8,7 @@ section#skills {
 }
 
 .subtitle {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   margin: 0.8rem 0;
   color: var(--primary-color);
@@ -37,5 +37,8 @@ section#skills {
 @media (max-width: 768px) {
   section#skills {
     justify-content: center;
+  }
+  .subtitle {
+    font-size: 28px;
   }
 }

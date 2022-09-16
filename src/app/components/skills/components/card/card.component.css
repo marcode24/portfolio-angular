@@ -6,6 +6,7 @@
   box-shadow: 0px 0 5px 1px rgb(0 0 0 / 10%);
   background: var(--bg-color);
   border: 1px solid var(--border-color-nav);
+  transition: 0.4s;
 }
 
 .card .body {
