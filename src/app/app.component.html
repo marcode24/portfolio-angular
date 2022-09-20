@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" *ngIf="!loading">
   <app-header></app-header>
   <app-navigation></app-navigation>
   <div class="content">
@@ -12,3 +12,5 @@
   </div>
 
 </div>
+
+<app-loader *ngIf="loading"></app-loader>

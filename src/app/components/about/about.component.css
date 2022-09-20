@@ -3,7 +3,6 @@ section {
   flex-direction: column;
   position: relative;
   width: 100%;
-  padding: 8rem 0 0 0;
 }
 
 section .description {
@@ -16,7 +15,7 @@ section .description {
 section figure {
   align-self: flex-end;
   width: 45rem;
-  height: 30rem;
+  height: 22rem;
   margin-top: 1rem;
 }
 
@@ -30,8 +29,9 @@ section figure img {
     padding: 0;
   }
   section figure {
+    margin-top: 2rem;
     width: 100%;
-    height: 20rem;
+    height: 15rem;
   }
   section .description {
     font-size: 18px;
@@ -41,6 +41,7 @@ section figure img {
 
 @media (max-width: 480px) {
   section figure {
+    margin-top: 2rem;
     width: 23rem;
     height: 8rem;
   }

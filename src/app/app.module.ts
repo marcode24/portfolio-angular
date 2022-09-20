@@ -27,6 +27,8 @@ import {
   faWrench
 } from '@fortawesome/free-solid-svg-icons';
 
+import { DelayService } from '@services/delay.service';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import {
     CoreComponentsModule,
     ComponentsModule
   ],
-  providers: [],
+  providers: [
+    DelayService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

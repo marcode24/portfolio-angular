@@ -4,11 +4,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     NavigationComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { NavigationComponent } from './navigation/navigation.component';
   ],
   exports: [
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoaderComponent
   ]
 })
 export class CoreComponentsModule { }

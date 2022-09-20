@@ -6,6 +6,8 @@
     "paths": {
       "@CoreComponents/*": ["app/core/components/*"],
       "@constants/*": [ "app/core/constants/*" ],
+      "@services/*": [ "app/core/services/*" ],
+      "@utils/*": [ "app/core/utils/*" ],
       "@interfaces/*": [ "app/core/interfaces/*" ],
       "@Components/*": ["app/components/*"],
     },

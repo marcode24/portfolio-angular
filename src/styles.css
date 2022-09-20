@@ -31,7 +31,7 @@ body {
   -o-transition: 0.7s;
 }
 
-body.dark-theme {
+body.dark {
   --bg-color: #111827;
   --bg-color-2: #3b82f6;
   --font-color: #ffffff;
@@ -100,7 +100,7 @@ a.btn:hover {
 
 section {
   width: 100%;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 section > .title {
