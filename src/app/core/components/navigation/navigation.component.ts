@@ -6,7 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-  private darkThemeName: string = 'dark-theme';
+  private darkThemeName: string = 'dark';
   public isDarkTheme: boolean;
   public activeSection: string;
 

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class DelayService {
 
   load(): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, 5000));
+    return new Promise(resolve => setTimeout(resolve, 2500));
   }
 
   constructor() { }

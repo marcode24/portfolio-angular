@@ -1,30 +1,23 @@
 <section id="portfolio">
   <span class="title">My portfolio 💼</span>
   <div class="projects">
-    <div class="item">
+    <div class="item" *ngFor="let proyect of proyects">
       <picture>
-        <img
-          src="https://res.cloudinary.com/dfeujtobk/image/upload/v1662941813/Resourcenter/Prevs/desktop/1.3_in6bzn.png"
-          alt="project-preview" loading="lazy">
+        <img [src]="proyect.image" alt="project-preview" loading="lazy" (click)="openLink(proyect.urlProduction)">
       </picture>
       <div class="description">
-        <span class="title">Project Name</span>
+        <span class="title">{{ proyect.name }}</span>
         <div class="card">
-          <span class="body">Simple description about project here
-            fadfajkfla akl jfdalkdsñ fa lfadslkñfdjsafasdkñjlfa
-            afdsfa afkasj akj ñlfjdasfklsdjfa ñslk
-          </span>
+          <p class="body">{{ proyect.description }} </p>
         </div>
         <div class="technologies">
-          <span class="badge">#Angular</span>
-          <span class="badge">#Nodejs</span>
-          <span class="badge">#MongoD_B</span>
+          <span class="badge" *ngFor="let technology of proyect.technologies">#{{technology}}</span>
         </div>
         <div class="links">
-          <a href="">
+          <a [href]="proyect.urlGithub" target="_blank">
             <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
           </a>
-          <a href="">
+          <a [href]="proyect.urlProduction" target="_blank">
             <fa-icon [icon]="['fas', 'external-link']" size="2x"></fa-icon>
           </a>
         </div>
@@ -32,6 +25,6 @@
     </div>
   </div>
   <div class="more">
-    <a href="https://github.com/marcode24?tab=repositories" target="_blank" class="btn">Show more</a>
+    <a href="https://github.com/marcode24?tab=overview" target="_blank" class="btn">Show more...</a>
   </div>
 </section>
