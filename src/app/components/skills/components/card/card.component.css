@@ -1,7 +1,7 @@
 .card {
   border-radius: 15px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   padding: 12px 20px;
   box-shadow: 0px 0 5px 1px rgb(0 0 0 / 10%);
   background: var(--bg-color);
@@ -21,7 +21,7 @@
 
 .card .body img {
   width: auto;
-  height: 55px;
+  height: 45px;
 }
 
 .card .body p.title {
@@ -31,13 +31,13 @@
 
 @media (max-width: 480px) {
   .card {
-    width: 90px;
-    height: 90px;
+    /* width: 90px;
+    height: 90px; */
     border-radius: 10px;
   }
 
   .card .body img {
-    height: 45px;
+    height: 40px;
   }
   .card .body p.title {
     font-size: 14px;
