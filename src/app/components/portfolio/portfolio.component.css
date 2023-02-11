@@ -13,7 +13,7 @@ section#portfolio {
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
   margin-top: 2rem;
 }
 
@@ -28,22 +28,20 @@ section#portfolio {
 }
 
 .item picture {
-  background: #4471ba;
+  background: #436aa8;
   height: 100%;
   width: 60%;
   border-radius: 25px;
   position: absolute;
-  transition: 0.4s;
+  transition: 0.4s ease;
   z-index: 1;
 }
 
 .item picture:hover {
   background-color: transparent;
-  transition: 0.4s;
 }
 
 .item picture img {
-  transition: 0.4s;
   mix-blend-mode: multiply;
   filter: grayscale(100%);
   object-fit: cover;
@@ -62,6 +60,7 @@ section#portfolio {
   left: 0;
   text-align: left;
   max-width: 60%;
+  align-items: flex-start;
 }
 
 .item .description {
@@ -70,9 +69,10 @@ section#portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   gap: 1rem;
   text-align: right;
-  min-height: 450px;
+  height: 100%;
 }
 
 .item .description .title {
@@ -97,7 +97,8 @@ section#portfolio {
 }
 
 .card .body {
-  font-size: 21px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .item:nth-child(2n + 2) .description .technologies,
@@ -109,24 +110,29 @@ section#portfolio {
 .description .links {
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 .badge {
-  font-size: 16px;
-  min-height: 30px;
+  font-size: 13px;
   border-radius: 1rem;
   padding: 5px 8px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   background-color: var(--bg-color-badge);
 }
 
+.badge:hover {
+  cursor: default;
+}
+
 .links a {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   color: var(--secondary-color);
+  transition: 0.4s ease;
 }
 
 .links a:visited {
@@ -135,18 +141,10 @@ section#portfolio {
 
 .links a:hover {
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
-  .links a {
-    font-size: 18px;
-    color: #fff;
-  }
-
-  .links a:visited {
-    color: #fff;
-  }
-
   .projects {
     gap: 1.5rem;
   }
@@ -187,7 +185,8 @@ section#portfolio {
     max-width: 100%;
   }
 
-  .item .description .title {
+  .item .description .title,
+  .item .description .body {
     color: var(--third-color);
     text-shadow: var(--text-shadow-color) 2px 0px 0px,
       var(--text-shadow-color) 1.75517px 0.958851px 0px,
@@ -213,35 +212,20 @@ section#portfolio {
   .card {
     padding: 0;
   }
-  .item {
-    height: 300px;
-  }
+  .item,
   .item picture {
-    height: 300px;
+    height: 350px;
   }
 
   .item .description {
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .item .description .title {
-    font-size: 28px;
+    font-size: 30;
   }
 
   .card .body {
     font-size: 17px;
-  }
-  .badge {
-    font-size: 12px;
-    font-weight: 500;
-    min-height: auto;
-  }
-  .links a {
-    font-size: 14px;
-    color: #fff;
-  }
-
-  .links a:visited {
-    color: #fff;
   }
 }

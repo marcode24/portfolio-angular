@@ -6,19 +6,19 @@
 }
 
 :root {
-  --bg-color: #fff;
+  --bg-color: #f7f7f7;
   --bg-color-2: #3b82f6a3;
   --bg-color-scroll: #aaaaaa;
   --font-color: #111827;
   --primary-color: #3b82f6;
   --second-color: #1f2937;
   --third-color: #e7e9ea;
-  --bg-color-button: #f3f4f6;
-  --bg-color-button-hover: #e7e7e7;
+  --bg-color-button: #e6e6ee;
+  --bg-color-button-hover: #dcdcdc;
   --bg-color-tooltip: #fff;
   --bg-dark3: #4b5563;
   --border-color: #d1d5db;
-  --border-color-nav: transparent;
+  --border-color-nav: #cbcbcb;
   --bg-color-badge: #1f2937;
   --text-shadow-color: #000000;
 }
@@ -34,7 +34,7 @@ body {
 body.dark {
   --bg-color: #111827;
   --bg-color-2: #3b82f6;
-  --font-color: #ffffff;
+  --font-color: #f7f7f7;
   --border-color-nav: #374151;
   --bg-color-button: #1f2937;
   --bg-color-button-hover: #2d3949;
